@@ -1,48 +1,59 @@
-# Inventory SQL Analysis
+# Retail Inventory Analysis with SQL
 
 ## Overview
+
 This project demonstrates how SQL can be used to analyze retail inventory data using SQLite.
 
-The dataset is a sanitized sample based on a retail inventory structure and is used to practice common inventory and supply chain analysis tasks.
+The dataset is a sanitized sample based on a real retail inventory structure. Sensitive operational values were removed or replaced with dummy data before being used for this project.
+
+The goal was to practice practical SQL analysis that could be applied to inventory, operations, and supply chain workflows.
 
 ## Skills Demonstrated
+
 - SQL
 - SQLite
 - Data filtering
 - Aggregation
-- GROUP BY
-- HAVING
-- ORDER BY
-- CASE WHEN
+- `GROUP BY`
+- `HAVING`
+- `ORDER BY`
+- `COUNT`
+- `SUM`
+- `COUNT(DISTINCT)`
+- `CASE WHEN`
 - Subqueries
 - Common Table Expressions (CTEs)
 - Duplicate detection
 - Inventory analysis
 
-## Example Analysis
-This project includes queries that:
+## Business Questions Explored
 
-- Calculate total inventory for a specific product style
-- Summarize inventory by brand
-- Count unique product styles by brand
-- Identify low-stock products
-- Detect duplicate SKUs
-- Categorize inventory levels
-- Rank product styles by inventory
-- Analyze inventory by brand and size
-- Compare brand inventory against average inventory levels
+The SQL queries in this project answer questions such as:
 
-## Dataset
-The dataset included in this repository is a sanitized sample created for demonstration purposes.
+- What is the total inventory for a specific product style?
+- Which brands have the most inventory?
+- How many unique product styles exist by brand?
+- Which products have low inventory?
+- Are there duplicate SKU records?
+- How can inventory levels be categorized as low, medium, or high?
+- Which product styles have the highest inventory?
+- How does inventory vary by brand and size?
+- Which brands have inventory above the average brand total?
 
-Sensitive company information has been removed or replaced with dummy values. Inventory quantities and other operational values do not reflect actual company data.
+## Project Files
 
-## Files
-- `sample_inventory.csv` — sanitized sample inventory dataset
-- `inventory_queries.sql` — SQL queries used for analysis
-- `README.md` — project documentation
+- `sample_inventory.csv`  
+  Sanitized retail inventory dataset used for analysis.
 
-## Tools
-- SQLite
-- SQL
-- CSV data
+- `inventory_queries.sql`  
+  SQL queries used to analyze the dataset.
+
+- `README.md`  
+  Project overview and instructions.
+
+## How to Run
+
+### 1. Open SQLite
+
+```bash
+sqlite3 inventory.db
